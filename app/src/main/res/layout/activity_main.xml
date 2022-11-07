@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/con1"
+            android:layout_width="match_parent"
+            android:layout_height="670dp">
+
+            <ImageView
+                android:id="@+id/alarm_view"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.154" />
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="374dp"
+                android:layout_height="31dp"
+                android:paddingLeft="10dp"
+                android:text="@string/txt1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/alarm_view"
+                app:layout_constraintHorizontal_bias="0.608"
+                app:layout_constraintStart_toStartOf="@id/alarm_view"
+                app:layout_constraintTop_toBottomOf="@id/alarm_view"
+                app:layout_constraintVertical_bias="0.038" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="397dp"
+                android:layout_height="51dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/txt2"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/alarm_view"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/txt1"
+                app:layout_constraintTop_toBottomOf="@id/txt1"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <TextView
+                android:id="@+id/txt3"
+                android:layout_width="388dp"
+                android:layout_height="60dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/txt3"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/alarm_view"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/txt2"
+                app:layout_constraintTop_toBottomOf="@id/txt2"
+                app:layout_constraintVertical_bias="0.114" />
+
+            <ImageView
+                android:id="@+id/heart_view"
+                android:layout_width="29dp"
+                android:layout_height="28dp"
+                app:layout_constraintBottom_toBottomOf="@id/txt3"
+                app:layout_constraintEnd_toEndOf="@id/txt3"
+                app:layout_constraintHorizontal_bias="0.859"
+                app:layout_constraintStart_toStartOf="@id/txt3"
+                app:layout_constraintTop_toTopOf="@id/txt3"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="197dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#0F9FCC"
+                android:drawableLeft="@drawable/ic_baseline_access_alarm_24"
+                android:text="@string/btn1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingRight="10dp"
+                app:layout_constraintEnd_toEndOf="@id/txt3"
+                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintStart_toStartOf="@id/txt3"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="191dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#0F9FCC"
+                android:drawableLeft="@drawable/ic_baseline_access_alarm_24"
+                android:text="@string/btn2"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="@id/txt3"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/txt3"
+                app:layout_constraintTop_toBottomOf="@+id/txt3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>
